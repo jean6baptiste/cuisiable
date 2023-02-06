@@ -70,6 +70,8 @@ figure {
   width: 50%;
   justify-content: center;
   height: auto;
+  position: relative;
+  left: 25%;
 }
 
 button {
@@ -77,4 +79,5 @@ button {
   margin: 2%;
   width: 100px;
   height: 100px;
+  border-style: none;
 }/*# sourceMappingURL=style.css.map */
