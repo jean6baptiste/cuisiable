@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-flow:  wrap;
+  display: block;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   height: 100vh;
@@ -12,8 +12,9 @@ body {
 
 #acceuil {
   position: absolute;
+  display: block;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 100%;
@@ -21,16 +22,14 @@ body {
 
 #container {
   display: none;
-  flex-flow: row wrap;
 }
 
 canvas {
-  display: flex;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  width: 100%;
 }
 
 #logo img {
@@ -38,20 +37,12 @@ canvas {
   display: none;
   top: 0;
 }
-.Begin{
-  width: 100%;
-  height: 65vh;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: end;
-
-}
 
 #StartChoix {
   width: 10%;
   height: 50px;
   position: relative;
+  margin: 35% 0 0 45%;
   border-style: none;
   background-color: #0078f0;
 }
@@ -60,17 +51,16 @@ img {
   width: 100%;
   position: relative;
 }
-.cuisine {
-  width: 100%;
-  
 
+.cuisine {
+  width: 60%;
 }
 
 figure {
   position: absolute;
   width: 50%;
   display: block;
-  left: 25%;
+  left: 29%;
   top: 10%;
 }
 
@@ -120,11 +110,13 @@ figure {
 }
 
 #actionB {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  top: 85vh;
+  left: 25%;
 }
 
 #btnC1 {
