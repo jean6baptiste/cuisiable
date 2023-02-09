@@ -1,47 +1,59 @@
-let couleur1 = document.getElementById('c1');
-let couleur2 = document.getElementById('c2');
-let couleur3 = document.getElementById('c3');
-let couleur4 = document.getElementById('c4');
-let btn1 = document.getElementById('btn');
-let btn2 = document.getElementById('btn1');
-let btn3 = document.getElementById('btn2');
-let btn4 = document.getElementById('btn3');
+let couleur1H = document.getElementById('ch1');
+let couleur2H = document.getElementById('ch2');
+
+let couleur1B = document.getElementById('cmb1');
+let couleur2B = document.getElementById('cmb2');
+
+let couleurP1 = document.getElementById('cp1');
+let couleurP2 = document.getElementById('cp2');
+
+let btn1A = document.getElementById('btnC1');
+let btn2A = document.getElementById('btnC2');
+let btn1B = document.getElementById('btnCb1');
+let btn2B = document.getElementById('btnCb2');
+let btn1C = document.getElementById('btnPc1');
+let btn2C = document.getElementById('btnPc2');
 
 
-btn1.addEventListener('click', change1);
-btn2.addEventListener('click', change2);
-btn3.addEventListener('click', change3);
-btn4.addEventListener('click', change4);
+btn1A.addEventListener('click', changeH1);
+btn2A.addEventListener('click', changeH2);
+btn1B.addEventListener('click', changeB1);
+btn2B.addEventListener('click', changeB2);
+btn1C.addEventListener('click', changeP1);
+btn2C.addEventListener('click', changeP2);
+let verif = false;
 
-
-function change1() 
+function changeH1() 
 {
-  couleur1.style.display="block";
-  couleur2.style.display="none";
-  couleur3.style.display="none";
-  couleur4.style.display="none";
+  couleur1H.style.display="block";
+  couleur2H.style.display="none";
+    
+}
+function changeH2() 
+{
+  couleur1H.style.display="none";
+  couleur2H.style.display="block";
+  
+}
+function changeB1() 
+{
+  couleur1B.style.display="block";
+  couleur2B.style.display="none";
+}
+function changeB2() 
+{
+  couleur1B.style.display="none";
+  couleur2B.style.display="block";
+    
 }
 
-function change2() 
+function changeP1() 
 {
-  couleur1.style.display="none";
-  couleur2.style.display="block";
-  couleur3.style.display="none";
-  couleur4.style.display="none";
+    couleurP1.style.display="block";
+    couleurP2.style.display="none";
 }
-
-function change3() 
+function changeP2() 
 {
-  couleur1.style.display="none";
-  couleur2.style.display="none";
-  couleur3.style.display="block";
-  couleur4.style.display="none";
-}
-
-function change4() 
-{
-  couleur1.style.display="none";
-  couleur2.style.display="none";
-  couleur3.style.display="none";
-  couleur4.style.display="block";
+    couleurP1.style.display="none";
+    couleurP2.style.display="block";
 }
