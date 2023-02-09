@@ -10,29 +10,41 @@ body {
   background-color: #fff;
 }
 
-.acceuil {
+#acceuil {
   position: absolute;
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
 
-.container {
+#container {
   display: none;
 }
 
 canvas {
   display: block;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 #logo img {
-  position: relative;
+  position: absolute;
   display: none;
   top: 0;
-  left: 25%;
-  width: 50%;
+}
+
+#StartChoix {
+  width: 10%;
+  height: 50px;
+  position: relative;
+  margin: 35% 0 0 45%;
+  border-style: none;
+  background-color: #0078f0;
 }
 
 img {
@@ -90,7 +102,7 @@ figure {
   display: none;
 }
 
-button {
+#container button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -135,4 +147,19 @@ button {
   border-style: solid;
   border-width: 5px;
   border-color: #35373e;
+}
+
+.scale {
+  animation: scale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

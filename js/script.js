@@ -7,13 +7,16 @@ let couleur2B = document.getElementById('cmb2');
 let couleurP1 = document.getElementById('cp1');
 let couleurP2 = document.getElementById('cp2');
 
+let acceuil = document.getElementById('acceuil');
+let ContainerPage = document.getElementById('container');
+
 let btn1A = document.getElementById('btnC1');
 let btn2A = document.getElementById('btnC2');
 let btn1B = document.getElementById('btnCb1');
 let btn2B = document.getElementById('btnCb2');
 let btn1C = document.getElementById('btnPc1');
 let btn2C = document.getElementById('btnPc2');
-
+let BtnStart = document.getElementById('StartChoix');
 
 btn1A.addEventListener('click', changeH1);
 btn2A.addEventListener('click', changeH2);
@@ -21,8 +24,7 @@ btn1B.addEventListener('click', changeB1);
 btn2B.addEventListener('click', changeB2);
 btn1C.addEventListener('click', changeP1);
 btn2C.addEventListener('click', changeP2);
-let verif = false;
-
+BtnStart.addEventListener('click', pageA);
 function changeH1() 
 {
   couleur1H.style.display="block";
@@ -56,4 +58,9 @@ function changeP2()
 {
     couleurP1.style.display="none";
     couleurP2.style.display="block";
+}
+function pageA() 
+{
+    acceuil.style.display="none";
+    ContainerPage.style.display="block";
 }
