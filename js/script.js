@@ -62,5 +62,5 @@ function changeP2()
 function pageA() 
 {
     acceuil.style.display="none";
-    ContainerPage.style.display="block";
+    ContainerPage.style.display="flex";
 }
